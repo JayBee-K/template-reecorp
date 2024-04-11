@@ -16,7 +16,6 @@ let handleApplyCollapse = function ($parent, $firstItem = false, $callFunction =
 	}
 
 	if (windowWidth <= 991) {
-
 		let $objParentAttr = {};
 		let $objChildrenAttr = {
 			'data-bs-parent': '#' + $parent.attr('id')
@@ -118,6 +117,41 @@ const handleStickHeader = function () {
 	});
 }
 
+
+const handleHeaderNavigationLine = function () {
+	const headerNavigation = $('#header-navigation');
+	const headerNavigationItem = headerNavigation.children('ul').children('li');
+	const headerNavigationLine = headerNavigation.children('#header-navigation_line');
+
+	headerNavigationItem.mouseenter(function () {
+		let offsetLeft  = $(this)[0].offsetLeft;
+		let innerWidth  = $(this).innerWidth();
+
+		headerNavigationLine.css({
+			left: offsetLeft,
+			width: innerWidth
+		}).addClass('show');
+	}).mouseleave(function () {
+		headerNavigationLine.removeClass('show')
+	})
+}
+
+const handleToggleSearch = function () {
+	let body = $('body'),
+		classActive = 'is-search';
+
+	$('#searchOpen').click(function () {
+		if(!body.hasClass(classActive)) {
+			body.addClass(classActive)
+		}
+	})
+
+	$('#searchClose').click(function () {
+		if(body.hasClass(classActive)) {
+			body.removeClass(classActive)
+		}
+	})
+}
 
 const handleCopyValue = function () {
 	const copyButtons = document.querySelectorAll('.button-copy');
@@ -236,10 +270,14 @@ const handleScrollTop = function () {
 $(function () {
 	handleApplyCollapse($('#header-navigation > ul'), true, true);
 	handleCallMenu();
+	handleHeaderNavigationLine();
 	$(window).resize(function () {
 		handleApplyCollapse($('#header-navigation > ul'));
 		handleCallMenu();
-	})
+		handleHeaderNavigationLine();
+	});
+	handleToggleSearch();
+
 	handleStickHeader();
 	handleCopyValue();
 	handleInitFancybox();

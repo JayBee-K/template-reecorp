@@ -1,7 +1,14 @@
-@media screen and (min-width: 992px) and (max-width: 1439px) {
+@media screen and (min-width: 992px) {
+	.header .header-navigation > ul > li:hover > a > i,
+	.header .header-navigation > ul > li:hover > button > i {
+		transform: rotate(180deg);
+	}
 }
 
 @media screen and (max-width: 991px) {
+	.header .header-navigation .header-navigation_line {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
