@@ -34,7 +34,7 @@ body {
 	color: var(--bs-gray-800);
 	font-family: var(--font-theme);
 	font-size: var(--size-theme);
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
 	background-color: #fff;
 }
@@ -384,7 +384,7 @@ input[type='number'] {
 .button-theme.button-theme_outline__primary {
 	background-color: transparent;
 	border-color: var(--primary-color);
-	color: var(--bs-white);
+	color: var(--primary-color);
 }
 
 .button-theme.button-theme_outline:hover,

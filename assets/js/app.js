@@ -253,4 +253,21 @@ $(function () {
             },
         });
     }
+	if ($('#slider-article').length) {
+		new Swiper('#slider-article .swiper', {
+			speed: 500,
+			slidesPerView: 1,
+			loop: false,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			effect: "cards",
+			grabCursor: true,
+			navigation: {
+				nextEl: "#slider-article .slider-navigation .slider-navigation_next",
+				prevEl: "#slider-article .slider-navigation .slider-navigation_prev",
+			},
+		});
+	}
 });
