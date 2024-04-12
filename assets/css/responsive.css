@@ -224,6 +224,27 @@
 		visibility: visible;
 		pointer-events: auto;
 	}
+	.section-search {
+		padding: 0 30px;
+	}
+	.section-search .search-close {
+		width: 32px;
+		height: 32px;
+		font-size: 1.3em;
+	}
+
+	.section-search .search-inner {
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.section-search .search-inner .form-control {
+		font-size: 1.225em;
+	}
+
+	.section-search .search-inner .link-default {
+		font-size: 1.3em;
+	}
 
 	.button-theme {
 		font-size: 1.075em;
