@@ -124,8 +124,8 @@ const handleHeaderNavigationLine = function () {
 	const headerNavigationLine = headerNavigation.children('#header-navigation_line');
 
 	headerNavigationItem.mouseenter(function () {
-		let offsetLeft  = $(this)[0].offsetLeft;
-		let innerWidth  = $(this).innerWidth();
+		let offsetLeft = $(this)[0].offsetLeft;
+		let innerWidth = $(this).innerWidth();
 
 		headerNavigationLine.css({
 			left: offsetLeft,
@@ -141,13 +141,13 @@ const handleToggleSearch = function () {
 		classActive = 'is-search';
 
 	$('#searchOpen').click(function () {
-		if(!body.hasClass(classActive)) {
+		if (!body.hasClass(classActive)) {
 			body.addClass(classActive)
 		}
 	})
 
 	$('#searchClose').click(function () {
-		if(body.hasClass(classActive)) {
+		if (body.hasClass(classActive)) {
 			body.removeClass(classActive)
 		}
 	})
@@ -290,11 +290,19 @@ $(function () {
 
 	if ($('#slider-hero').length) {
 		new Swiper('#slider-hero .swiper', {
-			speed: 500, slidesPerView: 1, loop: true, autoplay: {
-				delay: 5000, disableOnInteraction: true,
-			}, effect: 'fade', fadeEffect: {
+			speed: 500,
+			slidesPerView: 1,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			effect: 'fade',
+			fadeEffect: {
 				crossFade: true
-			}, watchSlidesProgress: true, navigation: {
+			},
+			watchSlidesProgress: true,
+			navigation: {
 				nextEl: "#slider-hero .slider-navigation .slider-navigation_next",
 				prevEl: "#slider-hero .slider-navigation .slider-navigation_prev",
 			},
@@ -303,9 +311,17 @@ $(function () {
 
 	if ($('#slider-article').length) {
 		new Swiper('#slider-article .swiper', {
-			speed: 500, slidesPerView: 1, loop: false, autoplay: {
-				delay: 5000, disableOnInteraction: true,
-			}, watchSlidesProgress: true, effect: "cards", grabCursor: true, navigation: {
+			speed: 500,
+			slidesPerView: 1,
+			loop: false,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			watchSlidesProgress: true,
+			effect: "cards",
+			grabCursor: true,
+			navigation: {
 				nextEl: "#slider-article .slider-navigation .slider-navigation_next",
 				prevEl: "#slider-article .slider-navigation .slider-navigation_prev",
 			},
@@ -314,17 +330,33 @@ $(function () {
 
 	if ($('#slider-responsibility').length && $('#slider-responsibility_content').length) {
 		let sliderResponsibilityContent = new Swiper('#slider-responsibility_content .swiper', {
-			speed: 500, slidesPerView: 1, loop: false, autoplay: {
-				delay: 5000, disableOnInteraction: true,
-			}, watchSlidesProgress: true, effect: 'fade', fadeEffect: {
+			speed: 500,
+			slidesPerView: 1,
+			loop: false,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			watchSlidesProgress: true,
+			effect: 'fade',
+			fadeEffect: {
 				crossFade: true
-			}, grabCursor: true,
+			},
+			grabCursor: true,
 		});
 
 		let sliderResponsibility = new Swiper('#slider-responsibility .slider-responsibility .swiper', {
-			speed: 500, slidesPerView: 1, loop: false, autoplay: {
-				delay: 5000, disableOnInteraction: true,
-			}, watchSlidesProgress: true, effect: "cards", grabCursor: true, navigation: {
+			speed: 500,
+			slidesPerView: 1,
+			loop: false,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			watchSlidesProgress: true,
+			effect: "cards",
+			grabCursor: true,
+			navigation: {
 				nextEl: "#slider-responsibility .slider-navigation .slider-navigation_next",
 				prevEl: "#slider-responsibility .slider-navigation .slider-navigation_prev",
 			}, pagination: {

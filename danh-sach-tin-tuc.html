@@ -1,374 +1,470 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Template Default</title>
-    <meta name="description" content="Template Default">
-    <meta name="author" content="">
+	<title>Template Default</title>
+	<meta name="description" content="Template Default">
+	<meta name="author" content="">
 
-    <meta property="og:title" content="Template Default">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="Template Default">
-    <meta property="og:image" content="./assets/images/logo.png">
+	<meta property="og:title" content="Template Default">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Default">
+	<meta property="og:image" content="./assets/images/logo.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
 
-    <link rel="icon" href="./assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+	<link rel="icon" href="./assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
 
-    <style>
-        :root {
-            --primary-color: #0055C7;
-            --primary-hover: #0149A9;
-            --primary-rgb: 0, 85, 199;
-            --secondary-color: #FDB62F;
-            --secondary-hover: #eca826;
-            --secondary-rgb: 253, 182, 47;
-        }
-    </style>
+	<style>
+		:root {
+			--primary-color: #0055C7;
+			--primary-hover: #0149A9;
+			--primary-rgb: 0, 85, 199;
+			--secondary-color: #FDB62F;
+			--secondary-hover: #eca826;
+			--secondary-rgb: 253, 182, 47;
+		}
+	</style>
 </head>
 <body class="is-page">
 
 <div class="section-search" id="floatingSearch">
-    <button type="button" id="searchClose" class="search-close">
-        <i class="fal fa-times"></i>
-    </button>
-    <form action="" class="w-100">
-        <div class="search-inner">
-            <input type="text" placeholder="Tìm kiếm" class="form-control">
-            <button type="submit" class="link-default">
-                <i class="fal fa-search"></i>
-            </button>
-        </div>
-    </form>
+	<button type="button" id="searchClose" class="search-close">
+		<i class="fal fa-times"></i>
+	</button>
+	<form action="" class="w-100">
+		<div class="search-inner">
+			<input type="text" placeholder="Tìm kiếm" class="form-control">
+			<button type="submit" class="link-default">
+				<i class="fal fa-search"></i>
+			</button>
+		</div>
+	</form>
 </div>
 
 <div id="header" class="header">
-    <div class="container">
-        <div class="header-inner">
-            <div class="header-logo">
-                <a href="" class="d-inline-block align-middle">
-                    <img src="./assets/images/logo.png" class="mw-100 w-auto" alt="">
-                </a>
-            </div>
-            <div class="header-navigation" id="header-navigation">
-                <ul>
-                    <li>
-                        <a href="">
-                            VỀ REE <i class="far fa-angle-down"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="">Giới Thiệu</a>
-                            </li>
-                            <li>
-                                <a href="">Nhóm Công Ty</a>
-                            </li>
-                            <li>
-                                <a href="">Đội ngũ lãnh đạo</a>
-                            </li>
-                            <li>
-                                <a href="">Giải thưởng</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">
-                            LĨNH VỰC HOẠT ĐỘNG <i class="far fa-angle-down"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="">Năng Lượng</a>
-                            </li>
-                            <li>
-                                <a href="">Nước & Môi Trường</a>
-                            </li>
-                            <li>
-                                <a href="">Cơ Điện Lạnh</a>
-                            </li>
-                            <li>
-                                <a href="">Bất Động Sản</a>
-                            </li>
-                            <li>
-                                <a href="">Dự Án Nổi Bật</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">
-                            PHÁT TRIỂN BỀN VỮNG <i class="far fa-angle-down"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="">Năng Lượng</a>
-                            </li>
-                            <li>
-                                <a href="">Nước & Môi Trường</a>
-                            </li>
-                            <li>
-                                <a href="">Cơ Điện Lạnh</a>
-                            </li>
-                            <li>
-                                <a href="">Bất Động Sản</a>
-                            </li>
-                            <li>
-                                <a href="">Dự Án Nổi Bật</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">
-                            QUAN HỆ CỔ ĐÔNG <i class="far fa-angle-down"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="">Năng Lượng</a>
-                            </li>
-                            <li>
-                                <a href="">Nước & Môi Trường</a>
-                            </li>
-                            <li>
-                                <a href="">Cơ Điện Lạnh</a>
-                            </li>
-                            <li>
-                                <a href="">Bất Động Sản</a>
-                            </li>
-                            <li>
-                                <a href="">Dự Án Nổi Bật</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">
-                            TIN TỨC - SỰ KIỆN
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            TUYỂN DỤNG <i class="far fa-angle-down"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="">Năng Lượng</a>
-                            </li>
-                            <li>
-                                <a href="">Nước & Môi Trường</a>
-                            </li>
-                            <li>
-                                <a href="">Cơ Điện Lạnh</a>
-                            </li>
-                            <li>
-                                <a href="">Bất Động Sản</a>
-                            </li>
-                            <li>
-                                <a href="">Dự Án Nổi Bật</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <span class="header-navigation_line" id="header-navigation_line"></span>
-            </div>
-            <div class="header-toolbar">
-                <div class="header-search">
-                    <button type="button" id="searchOpen" class="header-search_button link-default">
-                        <i class="fal fa-search"></i>
-                    </button>
-                </div>
-                <div class="header-language">
-                    <a href="" class="header-language_link">
-                        EN
-                    </a>
-                </div>
-                <div class="header-hamburger d-flex d-lg-none">
-                    <span class="hamburger-button" id="hamburger-button">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-overlay" id="header-overlay"></div>
+	<div class="container">
+		<div class="header-inner">
+			<div class="header-logo">
+				<a href="" class="d-inline-block align-middle">
+					<img src="./assets/images/logo.png" class="mw-100 w-auto" alt="">
+				</a>
+			</div>
+			<div class="header-navigation" id="header-navigation">
+				<ul>
+					<li>
+						<a href="">
+							VỀ REE <i class="far fa-angle-down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">Giới Thiệu</a>
+							</li>
+							<li>
+								<a href="">Nhóm Công Ty</a>
+							</li>
+							<li>
+								<a href="">Đội ngũ lãnh đạo</a>
+							</li>
+							<li>
+								<a href="">Giải thưởng</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+							LĨNH VỰC HOẠT ĐỘNG <i class="far fa-angle-down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">Năng Lượng</a>
+							</li>
+							<li>
+								<a href="">Nước & Môi Trường</a>
+							</li>
+							<li>
+								<a href="">Cơ Điện Lạnh</a>
+							</li>
+							<li>
+								<a href="">Bất Động Sản</a>
+							</li>
+							<li>
+								<a href="">Dự Án Nổi Bật</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+							PHÁT TRIỂN BỀN VỮNG <i class="far fa-angle-down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">Năng Lượng</a>
+							</li>
+							<li>
+								<a href="">Nước & Môi Trường</a>
+							</li>
+							<li>
+								<a href="">Cơ Điện Lạnh</a>
+							</li>
+							<li>
+								<a href="">Bất Động Sản</a>
+							</li>
+							<li>
+								<a href="">Dự Án Nổi Bật</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+							QUAN HỆ CỔ ĐÔNG <i class="far fa-angle-down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">Năng Lượng</a>
+							</li>
+							<li>
+								<a href="">Nước & Môi Trường</a>
+							</li>
+							<li>
+								<a href="">Cơ Điện Lạnh</a>
+							</li>
+							<li>
+								<a href="">Bất Động Sản</a>
+							</li>
+							<li>
+								<a href="">Dự Án Nổi Bật</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+							TIN TỨC - SỰ KIỆN
+						</a>
+					</li>
+					<li>
+						<a href="">
+							TUYỂN DỤNG <i class="far fa-angle-down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="">Năng Lượng</a>
+							</li>
+							<li>
+								<a href="">Nước & Môi Trường</a>
+							</li>
+							<li>
+								<a href="">Cơ Điện Lạnh</a>
+							</li>
+							<li>
+								<a href="">Bất Động Sản</a>
+							</li>
+							<li>
+								<a href="">Dự Án Nổi Bật</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<span class="header-navigation_line" id="header-navigation_line"></span>
+			</div>
+			<div class="header-toolbar">
+				<div class="header-search">
+					<button type="button" id="searchOpen" class="header-search_button link-default">
+						<i class="fal fa-search"></i>
+					</button>
+				</div>
+				<div class="header-language">
+					<a href="" class="header-language_link">
+						EN
+					</a>
+				</div>
+				<div class="header-hamburger d-flex d-lg-none">
+					<span class="hamburger-button" id="hamburger-button">
+						<i></i>
+						<i></i>
+						<i></i>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
 </div>
 
 <div id="main" class="main">
-    <div class="section-breadcrumb background-cover"
-         style="background-image: url('./assets/images/bg-breadcrumb.webp')">
-        <div class="breadcrumb-inner">
-            <div class="container">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item">
-                        <a href="#"><i class="fas fa-home-alt me-1"></i>Trang chủ</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        Danh mục tin tức
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </div>
+	<div class="section-breadcrumb background-cover"
+	     style="background-image: url('./assets/images/bg-breadcrumb.webp')">
+		<div class="breadcrumb-inner">
+			<div class="container">
+				<ol class="breadcrumb mb-0">
+					<li class="breadcrumb-item">
+						<a href="#"><i class="fas fa-home-alt me-1"></i>Trang chủ</a>
+					</li>
+					<li class="breadcrumb-item">
+						Danh mục tin tức
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="section-gap">
+		<div class="container">
+			<div class="section-heading">
+				<div class="heading-title">
+					Tin tức - Sự kiiện
+				</div>
+			</div>
+			<div class="section-category">
+				<div class="category-title">
+					Tin nổi bật
+				</div>
+				<div class="category-list">
+					<div class="category-item">
+						<div class="article-overlay position-relative overflow-hidden">
+							<div class="article-image pseudo">
+								<div class="ratio">
+									<img src="./assets/images/article/articel-2.webp" class="img-fluid"
+									     alt="">
+								</div>
+							</div>
+							<div class="article-content position-absolute bottom-0 start-0 w-100 zi-2 p-4 text-white">
+								<div class="article-category">
+									TIN TỨC
+								</div>
+								<div class="article-title fw-bold">
+									Lễ ký kết MoU giữa REE, TTVN, Kumagai Gumi, Kansai và INPEX
+								</div>
+							</div>
+							<a href=""
+							   class="stretched-link zi-3 position-absolute h-100 w-100 top-0 start-0"></a>
+						</div>
+					</div>
+					<div class="category-item">
+						<div class="article-overlay position-relative overflow-hidden">
+							<div class="article-image pseudo">
+								<div class="ratio">
+									<img src="./assets/images/article/article-1.webp" class="img-fluid"
+									     alt="">
+								</div>
+							</div>
+							<div class="article-content position-absolute bottom-0 start-0 w-100 zi-2 p-4 text-white">
+								<div class="article-category">
+									TIN TỨC
+								</div>
+								<div class="article-title fw-bold">
+									Hội nghị triển khai nhiệm vụ phát triển TTCK năm 2024
+								</div>
+							</div>
+							<a href=""
+							   class="stretched-link zi-3 position-absolute h-100 w-100 top-0 start-0"></a>
+						</div>
+					</div>
+					<div class="category-item">
+						<div class="article-overlay position-relative overflow-hidden">
+							<div class="article-image pseudo">
+								<div class="ratio">
+									<img src="./assets/images/article/article-3.webp" class="img-fluid"
+									     alt="">
+								</div>
+							</div>
+							<div class="article-content position-absolute bottom-0 start-0 w-100 zi-2 p-4 text-white">
+								<div class="article-category">
+									TIN TỨC
+								</div>
+								<div class="article-title fw-bold">
+									Sự kiện REE Land ra mắt dự án The Light Square
+								</div>
+							</div>
+							<a href=""
+							   class="stretched-link zi-3 position-absolute h-100 w-100 top-0 start-0"></a>
+						</div>
+					</div>
+					<div class="category-item">
+						<div class="article-overlay position-relative overflow-hidden">
+							<div class="article-image pseudo">
+								<div class="ratio">
+									<img src="./assets/images/article/article-1.webp" class="img-fluid"
+									     alt="">
+								</div>
+							</div>
+							<div class="article-content position-absolute bottom-0 start-0 w-100 zi-2 p-4 text-white">
+								<div class="article-category">
+									TIN TỨC
+								</div>
+								<div class="article-title fw-bold">
+									Hội nghị triển khai nhiệm vụ phát triển TTCK năm 2024
+								</div>
+							</div>
+							<a href=""
+							   class="stretched-link zi-3 position-absolute h-100 w-100 top-0 start-0"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer id="footer" class="footer">
-    <img src="./assets/images/bg-decor-footer.png" class="img-fluid footer-decor" alt="">
-    <div class="container">
-        <div class="position-relative">
-            <div class="footer-top">
-                <div class="row g-4">
-                    <div class="col-12">
-                        <div class="footer-logo">
-                            <img src="./assets/images/logo-white.png" width="106" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="row g-lg-3 g-5 justify-content-between">
-                            <div class="col-xl-3 col-lg-3 col-12">
-                                <div class="footer-item">
-                                    <div class="footer-title">
-                                        CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
-                                    </div>
-                                    <div class="footer-list">
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            <i class="fas fa-phone-alt"></i>
-                                            (+84) 28 3810 0017
-                                        </a>
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            <i class="fas fa-phone-rotary"></i>
-                                            (+84) 28 3810 0337
-                                        </a>
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            <i class="fas fa-envelope"></i>
-                                            ree@reecorp.com
-                                        </a>
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            Tòa nhà E.town 5, 364 Cộng Hòa, Q.Tân Bình, Tp.Hồ Chí Minh, Việt Nam
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-6">
-                                <div class="footer-item">
-                                    <div class="footer-title">
-                                        THÔNG TIN
-                                    </div>
-                                    <div class="footer-list">
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            Về REE
-                                        </a>
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            Lĩnh Vực Hoạt Động
-                                        </a>
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            Phát Triển Bền Vững
-                                        </a>
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            Quan Hệ Cổ Đông
-                                        </a>
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            Tin tức – Sự kiện
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-6">
-                                <div class="footer-item">
-                                    <div class="footer-title">
-                                        TUYỂN DỤNG
-                                    </div>
-                                    <div class="footer-list">
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            Làm Việc Tại REE
-                                        </a>
-                                        <a href="" class="d-inline-block align-middle footer-list_item">
-                                            Cơ Hội Nghề Nghiệp
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-12">
-                                <div class="footer-item">
-                                    <div class="footer-title">
-                                        Kết nối với chúng tôi
-                                    </div>
-                                    <div class="footer-iframe">
-                                        <div class="fb-page" data-href="https://www.facebook.com/nencersoftware"
-                                             data-tabs="timeline" data-width="" data-height="130"
-                                             data-small-header="false"
-                                             data-adapt-container-width="true" data-hide-cover="false"
-                                             data-show-facepile="true">
-                                            <blockquote cite="https://www.facebook.com/nencersoftware"
-                                                        class="fb-xfbml-parse-ignore"><a
-                                                    href="https://www.facebook.com/nencersoftware">Facebook</a>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                    <div class="footer-social">
-                                        <a href="" class="footer-social_item">
-                                            <img src="./assets/images/social/facebook.png"
-                                                 class="rounded-circle img-fluid"
-                                                 alt="">
-                                        </a>
-                                        <a href="" class="footer-social_item">
-                                            <img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid"
-                                                 alt="">
-                                        </a>
-                                        <a href="" class="footer-social_item">
-                                            <img src="./assets/images/social/youtube.png"
-                                                 class="rounded-circle img-fluid"
-                                                 alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="row g-3">
-                    <div class="col-lg-6">
-                        <div class="footer-navigation">
-                            <a href="" class="footer-navigation_item d-inline-block align-middle">
-                                Chính sách quyền riêng tư
-                            </a>
-                            <a href="" class="footer-navigation_item d-inline-block align-middle">
-                                Sơ đồ website
-                            </a>
-                            <a href="" class="footer-navigation_item d-inline-block align-middle">
-                                Liên Hệ
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-lg-end text-center text-white">
-                        Copyright © 2024 REE Corporation. All rights reserved.
-                    </div>
-                </div>
-            </div>
-            <div class="footer-scroll">
-                <button type="button" class="button-scroll" id="scrollTop">
-                    <i class="fas fa-arrow-up"></i>
-                </button>
-            </div>
-        </div>
-    </div>
+	<img src="./assets/images/bg-decor-footer.png" class="img-fluid footer-decor" alt="">
+	<div class="container">
+		<div class="position-relative">
+			<div class="footer-top">
+				<div class="row g-4">
+					<div class="col-12">
+						<div class="footer-logo">
+							<img src="./assets/images/logo-white.png" width="106" class="img-fluid" alt="">
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="row g-lg-3 g-5 justify-content-between">
+							<div class="col-xl-3 col-lg-3 col-12">
+								<div class="footer-item">
+									<div class="footer-title">
+										CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+									</div>
+									<div class="footer-list">
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											<i class="fas fa-phone-alt"></i>
+											(+84) 28 3810 0017
+										</a>
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											<i class="fas fa-phone-rotary"></i>
+											(+84) 28 3810 0337
+										</a>
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											<i class="fas fa-envelope"></i>
+											ree@reecorp.com
+										</a>
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											<i class="fas fa-map-marker-alt"></i>
+											Tòa nhà E.town 5, 364 Cộng Hòa, Q.Tân Bình, Tp.Hồ Chí Minh, Việt Nam
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-2 col-lg-3 col-6">
+								<div class="footer-item">
+									<div class="footer-title">
+										THÔNG TIN
+									</div>
+									<div class="footer-list">
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											Về REE
+										</a>
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											Lĩnh Vực Hoạt Động
+										</a>
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											Phát Triển Bền Vững
+										</a>
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											Quan Hệ Cổ Đông
+										</a>
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											Tin tức – Sự kiện
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-2 col-lg-3 col-6">
+								<div class="footer-item">
+									<div class="footer-title">
+										TUYỂN DỤNG
+									</div>
+									<div class="footer-list">
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											Làm Việc Tại REE
+										</a>
+										<a href="" class="d-inline-block align-middle footer-list_item">
+											Cơ Hội Nghề Nghiệp
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-12">
+								<div class="footer-item">
+									<div class="footer-title">
+										Kết nối với chúng tôi
+									</div>
+									<div class="footer-iframe">
+										<div class="fb-page" data-href="https://www.facebook.com/nencersoftware"
+										     data-tabs="timeline" data-width="" data-height="130"
+										     data-small-header="false"
+										     data-adapt-container-width="true" data-hide-cover="false"
+										     data-show-facepile="true">
+											<blockquote cite="https://www.facebook.com/nencersoftware"
+											            class="fb-xfbml-parse-ignore"><a
+													href="https://www.facebook.com/nencersoftware">Facebook</a>
+											</blockquote>
+										</div>
+									</div>
+									<div class="footer-social">
+										<a href="" class="footer-social_item">
+											<img src="./assets/images/social/facebook.png"
+											     class="rounded-circle img-fluid"
+											     alt="">
+										</a>
+										<a href="" class="footer-social_item">
+											<img src="./assets/images/social/zalo.png" class="rounded-circle img-fluid"
+											     alt="">
+										</a>
+										<a href="" class="footer-social_item">
+											<img src="./assets/images/social/youtube.png"
+											     class="rounded-circle img-fluid"
+											     alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="row g-3">
+					<div class="col-lg-6">
+						<div class="footer-navigation">
+							<a href="" class="footer-navigation_item d-inline-block align-middle">
+								Chính sách quyền riêng tư
+							</a>
+							<a href="" class="footer-navigation_item d-inline-block align-middle">
+								Sơ đồ website
+							</a>
+							<a href="" class="footer-navigation_item d-inline-block align-middle">
+								Liên Hệ
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 text-lg-end text-center text-white">
+						Copyright © 2024 REE Corporation. All rights reserved.
+					</div>
+				</div>
+			</div>
+			<div class="footer-scroll">
+				<button type="button" class="button-scroll" id="scrollTop">
+					<i class="fas fa-arrow-up"></i>
+				</button>
+			</div>
+		</div>
+	</div>
 </footer>
 
 <script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
