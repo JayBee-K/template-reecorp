@@ -243,6 +243,20 @@
     transform: translateX(5px);
 }
 
+.section-heading .heading-sub {
+    font-size: 1.75em;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 24px;
+    line-height: 1.3;
+}
+
+.section-heading .heading-sub p:last-child,
+.section-heading .heading-sub ul:last-child,
+.section-heading .heading-sub ol:last-child {
+    margin-bottom: 0;
+}
+
 .section-heading .heading-desc {
     font-size: 1.3em;
     line-height: 1.6;
@@ -561,6 +575,40 @@
     z-index: 2;
     color: var(--bs-white);
     transform: translateX(100%);
+}
+
+.section-counter.section-counter_2 .counter-inner {
+    padding: 80px 0;
+}
+
+.section-counter.section-counter_2 .counter-inner .counter-item .counter-item_title {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: unset;
+}
+
+.section-counter.section-counter_2 .counter-inner .counter-item .counter-item_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-counter.section-counter_2 .counter-inner .counter-item .counter-item_number {
+    font-size: 4.5em;
+}
+
+.section-counter.section-counter_2 .counter-inner .counter-item .counter-item_currency {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.45em;
+}
+
+.section-counter.section-counter_2 .counter-inner .counter-desc {
+    transform: translate(0);
+    font-size: 1.15em;
 }
 
 .section-shareholder .shareholder-list {
@@ -1396,6 +1444,20 @@
     line-height: 1.6
 }
 
+.description-item .description-content .description-text img {
+    margin-bottom: 16px;
+}
+
+.description-item .description-content .description-text p:last-child,
+.description-item .description-content .description-text ul:last-child,
+.description-item .description-content .description-text ol:last-child {
+    margin-bottom: 0
+}
+
+.description-item .description-content .description-link {
+    margin-top: 16px;
+}
+
 .description-item .description-content .description-link .description-link_inner {
     align-self: flex-end;
     font-size: 16px;
@@ -1936,4 +1998,24 @@
 .slider-project .swiper-slide.swiper-slide-active .project-item {
     filter: blur(0);
     transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1, 1) !important;
+}
+
+.section-gallery {
+    position: relative;
+}
+
+.section-gallery:before {
+    background-color: #fafafa;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(1320px + ((100% - 1320px) / 2));
+    position: absolute;
+}
+
+.section-gallery .section-description {
+    padding-left: calc(68% / 2 - 1rem);
+    padding-right: 90px;
 }

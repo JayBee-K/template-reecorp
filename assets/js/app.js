@@ -215,12 +215,14 @@ const handleCounter = function () {
             let counterOffsetTop = $('#handleCounter').offset().top - window.innerHeight;
             if (i === 0 && $(window).scrollTop() > counterOffsetTop) {
                 $('#handleCounter .handleCounterItem').each(function () {
-                    let counterItem = $(this), counterItemValue = counterItem.attr('data-value');
+                    let counterItem = $(this),
+                        counterItemValue = counterItem.attr('data-value'),
+                        counterItemFormat = counterItem.attr('data-format');
                     $({countNum: counterItem.text()}).animate({countNum: counterItemValue}, {
                         duration: 2000, easing: 'swing', step: function () {
                             counterItem.text(Math.floor(this.countNum));
                         }, complete: function () {
-                            counterItem.html(formatPrice(this.countNum.toString()));
+                            counterItem.html(formatPrice(this.countNum.toString(), counterItemFormat));
                         }
                     });
                 });
@@ -445,5 +447,39 @@ $(function () {
                 prevEl: "#slider-project .slider-navigation .slider-navigation_prev",
             },
         });
+    }
+
+    if ($('#slider-gallery').length) {
+        let sliderGallery;
+
+        sliderGallery = new Swiper('#slider-gallery .swiper', {
+            speed: 500,
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+            loop: 1,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: "#slider-gallery .slider-navigation .slider-navigation_next",
+                prevEl: "#slider-gallery .slider-navigation .slider-navigation_prev",
+            },
+        });
+        const handleFancyBoxGallery = function (elm, sliderGallery) {
+            Fancybox.bind(('[data-fancybox=gallery-image]'), {
+                touch: true,
+                on: {
+                    reveal: function (instance, current) {
+                        let index = elm.find(`[data-fancybox='gallery-image'][href='${current.src}']`).attr('data-index');
+                        sliderGallery.slideTo(index - 1);
+                    },
+                }
+            });
+        }
+
+        handleFancyBoxGallery($('#slider-gallery'), sliderGallery);
+
     }
 });
