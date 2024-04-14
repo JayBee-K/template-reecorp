@@ -136,23 +136,6 @@ const handleHeaderNavigationLine = function () {
 	})
 }
 
-const handleToggleSearch = function () {
-	let body = $('body'),
-		classActive = 'is-search';
-
-	$('#searchOpen').click(function () {
-		if (!body.hasClass(classActive)) {
-			body.addClass(classActive)
-		}
-	})
-
-	$('#searchClose').click(function () {
-		if (body.hasClass(classActive)) {
-			body.removeClass(classActive)
-		}
-	})
-}
-
 const handleCopyValue = function () {
 	const copyButtons = document.querySelectorAll('.button-copy');
 	if (copyButtons) {
@@ -276,7 +259,6 @@ $(function () {
 		handleCallMenu();
 		handleHeaderNavigationLine();
 	});
-	handleToggleSearch();
 
 	handleStickHeader();
 	handleCopyValue();
@@ -373,5 +355,22 @@ $(function () {
 		sliderResponsibilityContent.on('slideChange', function (elm) {
 			sliderResponsibility.slideTo(elm.realIndex)
 		})
+	}
+
+	if ($('#slider-articleRelated').length) {
+		new Swiper('#slider-articleRelated .swiper', {
+			speed: 500,
+			spaceBetween: 15,
+			slidesPerView: 4,
+			loop: false,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			navigation: {
+				nextEl: "#slider-articleRelated .slider-navigation .slider-navigation_next",
+				prevEl: "#slider-articleRelated .slider-navigation .slider-navigation_prev",
+			},
+		});
 	}
 });
