@@ -2152,7 +2152,7 @@
 .leadership-content {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 16px;
+	column-gap: 16px;
 }
 
 .leadership-item {
@@ -2162,6 +2162,7 @@
 	border-radius: 16px 0 0 0;
 	transition: var(--transition-default);
 	background: var(--bs-white);
+	margin-bottom: 30px;
 }
 
 .leadership-item:hover {
