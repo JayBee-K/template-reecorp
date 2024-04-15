@@ -1327,7 +1327,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: var(--bs-black);
+    color: var(--primary-color);
     font-size: 1.45em;
     font-weight: 700;
     text-transform: uppercase;
@@ -1569,6 +1569,8 @@
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
+	flex-shrink: 0;
+	white-space: nowrap;
     gap: 5px;
 }
 
