@@ -2018,6 +2018,6 @@
 }
 
 .section-gallery .section-description {
-    padding-left: calc(68% / 2 - 1rem);
+    padding-left: calc(100% / 3 - 1rem);
     padding-right: 90px;
 }

@@ -505,7 +505,7 @@ $(function () {
 		sliderGallery = new Swiper('#slider-gallery .swiper', {
 			speed: 500,
 			slidesPerView: 2.5,
-			spaceBetween: 30,
+			spaceBetween: 15,
 			loop: 1,
 			autoplay: {
 				delay: 5000,
