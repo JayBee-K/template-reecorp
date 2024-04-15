@@ -256,6 +256,7 @@
 
 	.section-heading .heading-title {
 		font-size: 1.8em;
+		line-height: 1.3;
 	}
 
 	.section-heading.section-heading_small .heading-title {
@@ -558,6 +559,53 @@
 		padding-left: 0.75rem;
 	}
 
+	.section-counter.section-counter_2 .counter-inner {
+		padding: 50px 0;
+	}
+
+	.section-counter.section-counter_2 .counter-inner .counter-item .counter-item_number {
+		font-size: 2em;
+	}
+
+	.section-counter.section-counter_2 .counter-inner .counter-item .counter-item_currency {
+		font-size: 1.15em;
+	}
+
+	.section-counter.section-counter_2 .counter-inner .counter-item .counter-item_title {
+		padding-top: 15px;
+		margin-top: 15px;
+		font-size: 1.075em;
+	}
+
+	.section-counter.section-counter_2 .counter-inner .counter-desc {
+		font-size: 1.075em;
+	}
+
+	.section-introduction .introduction-image img {
+		position: relative;
+		height: auto;
+	}
+
+	.section-introduction .introduction-content {
+		padding: 0;
+		margin-top: 20px;
+	}
+
+	.section-introduction .introduction-content .introduction-content_title {
+		font-size: 1.8em;
+	}
+
+	.section-introduction .introduction-content .introduction-content_desc {
+		font-size: 1.15em;
+	}
+
+	.section-introduction .introduction-content .introduction-content_counter .introduction-content_counter-item .counter-number {
+		font-size: 2em;
+	}
+
+	.section-introduction .introduction-content .introduction-content_counter .introduction-content_counter-item .counter-text {
+		font-size: 1.075em;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -595,6 +643,15 @@
 		padding-left: .75rem;
 		padding-right: .75rem;
 		margin: 0 auto 2rem;
+	}
+
+	.section-introduction .introduction-content .introduction-content_counter {
+		flex-wrap: wrap;
+	}
+
+	.section-introduction .introduction-content .introduction-content_counter .introduction-content_counter-item {
+		width: 50%;
+		padding-right: 0;
 	}
 }
 
