@@ -218,7 +218,7 @@ const handleCounter = function () {
                     let counterItem = $(this),
                         counterItemValue = counterItem.attr('data-value'),
                         counterItemFormat = counterItem.attr('data-format'),
-                        counterItemDecor = counterItem.attr('data-decor');
+                        counterItemDecor = counterItem.attr('data-decor') ?? '';
                     $({countNum: counterItem.text()}).animate({countNum: counterItemValue}, {
                         duration: 2000, easing: 'swing', step: function () {
                             counterItem.text(Math.floor(this.countNum));
